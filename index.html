@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Architect Website</title>
+
+    <!--  link style -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- link font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+
+    <!-- link google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- SPINNER -->
+    <div class="spinner-container">
+      <div class="circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+   
+    <div class="container">
+      <!-- =========== HAMBURGER === -->
+      <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <span>Fermer</span>
+      </div>
+
+      <!-- ========== HEADER === -->
+      
+      <header class="header">
+        
+        <!-- Image -->
+        <div class="img-wrapper">
+          <video src="./images/Projet JMB 02.m4v" autoplay loop muted></video>
+        </div>
+
+        <div class="banner2">
+          <img src="./images/maison.png" alt="">
+          <h3 class="logo">NéoPlan</h3>
+        </div>
+
+        <!-- banner -->
+        <div class="banner">
+         
+          <h1>Architecture & Design d'intérieur</h1>
+          <p>Collaborateur d’ architecte durant 30 ans et désormais indépendant possédant une grande expérience dans toutes les phases graphiques d'un projet architectural.</p>
+          <button>Boutton 1 </button>
+        </div>
+        
+          
+          
+      </header>
+
+      <!-- =========== SIDEBAR === -->
+      <section class="sidebar">
+        <!-- Menu -->
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Acceuil">Acceuil</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="A propos">A propos</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Team">Team</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Prix">Prix</a>
+          </li>
+          <li class="menu-item" onclick="scrollToSection('contact')">
+            <a href="#" class="menu-link" data-content="Contact" >Contact</a>
+          </li>
+        </ul>
+
+        <!-- Social media -->
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </section>
+
+      <!-- ========== ABOUT US === -->
+      <section class="about-us">
+        <!-- Header -->
+       
+        <div class="section-header">
+          
+          <h1 class="section-heading">A propos</h1>
+          <div class="underline"></div>
+        </div>
+
+        <!-- Services -->
+        <div class="services">
+       
+          <div class="service">
+            <div class="service-header">
+              <i class="fas fa-pen-nib"></i>
+              <h3>Tous permis de construire :</h3>
+            </div>
+            <p class="service-text">
+              • Relevé état des lieux <br>
+              • Neuf, rénovation <br>
+              • Maison individuelle , extension <br>
+              • Hangar agricole, garage, gîte, abri piscine <br>
+              • Commerce <br>
+              • Intégration au site, étude d’impact <br>
+              • Etude architecture intérieure <br>
+              • Images commerciales (campings, gîtes…) <br>
+              • Création video <br>
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="service-header">
+              <i class="fas fa-paint-roller"></i>
+              <h3>Exterieur</h3>
+            </div>
+            <p class="service-text">
+              • Etude, Visualisation  & Navigation 3D <br>
+              • Tarif forfaitaire sur devis. <br>
+              • Etude thermique avec thermicien <br>
+              • Etude de sol avec bureau d’études <br>
+              • Dossier assainissement étude avec le SPANC <br>
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="service-header">
+              <i class="fas fa-pencil-alt"></i>
+              <h3>Designe</h3>
+            </div>
+            <p class="service-text">
+              • Etude, Visualisation  & Navigation 3D <br>
+              • Tarif forfaitaire sur devis. <br>
+              • Etude thermique avec thermicien <br>
+              • Etude de sol avec bureau d’études <br>
+              • Dossier assainissement étude avec le SPANC <br>
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="service-header">
+              <i class="fas fa-paint-brush"></i>
+              <h3>Décoration</h3>
+            </div>
+            <p class="service-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              nam veniam, reprehenderit, rerum quae dicta, iure eum laborum rem
+              id delectus accusamus. Non, saepe minima?
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="service-header">
+              <i class="fas fa-ruler-combined"></i>
+              <h3>Plannification</h3>
+            </div>
+            <p class="service-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              nam veniam, reprehenderit, rerum quae dicta, iure eum laborum rem
+              id delectus accusamus. Non, saepe minima?
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="service-header">
+              <i class="fas fa-building"></i>
+              <h3>Execution</h3>
+            </div>
+            <p class="service-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              nam veniam, reprehenderit, rerum quae dicta, iure eum laborum rem
+              id delectus accusamus. Non, saepe minima?
+            </p>
+          </div>
+
+          <!-- Image -->
+          <div class="about-us-img-wrapper">
+            <img src="./images/Capture d’écran 2017-10-04 à 11.25.00-enhanced-20.png" alt="house" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== TEAM === -->
+      <section class="team">
+        <!-- Header -->
+        <div class="section-header">
+          <h1 class="section-heading">Projets</h1>
+          <div class="underline"></div>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards-wrapper">
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <img src="./images/1002-JULLIEN-pers 4-128.jpg" alt="CEO" />
+            </div>
+            <div class="card-info">
+              <h2>John Smith</h2>
+              <h3>CEO</h3>
+              <p>
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Inventore, deleniti!"
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          
+
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <img src="./images/CHATELAN-0-58.jpg" alt="Designer" />
+            </div>
+            <div class="card-info">
+              <h2>Ann Brown</h2>
+              <h3>Designer</h3>
+              <p>
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Inventore, deleniti!"
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <img src="./images/ACCamera-4-64.jpg" alt="Architect" />
+            </div>
+            <div class="card-info">
+              <h2>Mary Doe</h2>
+              <h3>Architect</h3>
+              <p>
+                " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Inventore, deleniti!"
+              </p>
+              <button>Read More</button>
+            </div>
+            
+          </div>
+          
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <img src="./images/GRANVAUD-2-72.jpg" alt="Architect" />
+            </div>
+            <div class="card-info">
+              <h2>Mary Doe</h2>
+              <h3>Architect</h3>
+              <p>
+                " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Inventore, deleniti!"
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <video src="./images/Projet JMB 02.m4v" autoplay loop muted></video>
+            </div>
+            <div class="card-info">
+              <h2>Mary Doe</h2>
+              <h3>Architect</h3>
+              <p>
+                " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Inventore, deleniti!"
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <img src="./images/Logement Proche+projet***-filtered-118.jpeg" alt="Architect" />
+            </div>
+            <div class="card-info">
+              <h2>Mary Doe</h2>
+              <h3>Architect</h3>
+              <p>
+                " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Inventore, deleniti!"
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <img src="./images/1110-DUCROS montage maquette-1-38.jpg" alt="Architect" />
+            </div>
+            <div class="card-info">
+              <h2>Mary Doe</h2>
+              <h3>Architect</h3>
+              <p>
+                " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Inventore, deleniti!"
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          
+          
+        </div>
+      </section>
+
+      <!-- ========== CONTACT === -->
+      <section class="contact" id="contact">
+        <div class="contact-wrapper">
+          <div class="contact-left"></div>
+          <div class="contact-right">
+            <h1 class="contact-heading">Contact</h1>
+            <form action="traitement-formulaire.php" method="POST">
+              <div class="input-group">
+                <input type="text" class="field" name="name" required />
+                <label class="input-label">Full Name</label>
+              </div>
+      
+              <div class="input-group">
+                <input type="email" class="field" name="email" required />
+                <label class="input-label">Email</label>
+              </div>
+      
+              <div class="input-group">
+                <textarea class="field" name="message"></textarea>
+                <label class="message">Message</label>
+              </div>
+      
+              <input type="submit" class="submit-btn" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- ========== FOOTER === -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p class="copyright">
+            Copyright &copy; 2023, Code and Create - All Rights Reserved
+          </p>
+
+          <div class="social-list">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </footer>
+
+      <!-- ========== SCROLL BUTTON === -->
+      <a href="#" class="scroll-btn">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+
+    <!-- link script -->
+    <script src="./script.js"></script>
+   
+    <!-- link jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+     
+      crossorigin="anonymous"
+    ></script>
+    <!-- link tilt -->
+    <script src="tilt.js"></script>
+   
+  </body>
+</html>
